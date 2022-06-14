@@ -27,20 +27,51 @@ public class Buoi1 {
 //         Trường hợp 2: ++a
 //              - Chạy a = a + 1
 //              - Lấy giá trị của a và thế vào vị trí a++
-        int a = 5;
-        int b = 5;
+//         int a = 5;
+//         int b = 5;
+//
+//         int result = ++a - --b + a-- - b-- + a++ - --b - --a;
+//         6 - --b + a-- - b-- + a++ - --b - --a; a = 6, b = 5
+//         6 - 4 + a-- - b-- + a++ - --b - --a; a = 6, b = 4
+//         6 - 4 + 6 - b-- + a++ - --b - --a; a = 5, b = 4
+//         6 - 4 + 6 - 4 + a++ - --b - --a; a = 5, b = 3
+//         6 - 4 + 6 - 4 + 5 - --b - --a; a = 6, b = 3
+//         6 - 4 + 6 - 4 + 5 - 2 - --a; a = 6, b = 2
+//         6 - 4 + 6 - 4 + 5 - 2 - 5; a = 5, b = 2
+//         result = 2, a = 5, b = 2
+//         System.out.println("Result " + result);
+//         System.out.println("A " + a);
+//         System.out.println("B " + b);
 
-        int result = ++a - --b + a-- - b-- + a++ - --b - --a;
-        // 6 - --b + a-- - b-- + a++ - --b - --a; a = 6, b = 5
-        // 6 - 4 + a-- - b-- + a++ - --b - --a; a = 6, b = 4
-        // 6 - 4 + 6 - b-- + a++ - --b - --a; a = 5, b = 4
-        // 6 - 4 + 6 - 4 + a++ - --b - --a; a = 5, b = 3
-        // 6 - 4 + 6 - 4 + 5 - --b - --a; a = 6, b = 3
-        // 6 - 4 + 6 - 4 + 5 - 2 - --a; a = 6, b = 2
-        // 6 - 4 + 6 - 4 + 5 - 2 - 5; a = 5, b = 2
-        // result = 2, a = 5, b = 2
-        System.out.println("Result " + result);
-        System.out.println("A " + a);
-        System.out.println("B " + b);
+//         int a = 10;
+//         int b = 3;
+//         int result = a-- - --a + b-- + --b - a++ + b-- + b++ + a--;
+//         10 - --a + b-- + --b - a++ + b-- + b++ + a--; a = 9, b = 3
+//         10 - 8 + b-- + --b - a++ + b-- + b++ + a--; a = 8, b = 3
+//         10 - 8 + 3 + --b - a++ + b-- + b++ + a--; a = 8, b = 2
+//         10 - 8 + 3 + 1 - a++ + b-- + b++ + a--; a = 8, b = 1
+//         10 - 8 + 3 + 1 - 8 + b-- + b++ + a--; a = 9, b = 1
+//         10 - 8 + 3 + 1 - 8 + 1 + b++ + a--; a = 9, b = 0
+//         10 - 8 + 3 + 1 - 8 + 1 + 0 + a--; a = 9, b = 1
+//         10 - 8 + 3 + 1 - 8 + 1 + 0 + 9; a = 8, b = 1
+//         result = 8, a = 8, b = 1
+//
+//         System.out.println("Result " + result);
+//         System.out.println("A " + a);
+//         System.out.println("B " + b);
+
+//         Toán tử so sánh: > <, ==, &&, ||, !isMale
+
+//         5: Câu điều kiện if else
+//        int teo = 1999;
+//        int ty = 2000;
+//
+//        if (teo > ty) {
+//            System.out.println("Tèo nhỏ tuổi hơn Tý");
+//        } else if (teo == ty) {
+//            System.out.println("Tèo băng tuổi Tý");
+//        } else {
+//            System.out.println("Tèo lớn hơn Tý");
+//        }
     }
 }
