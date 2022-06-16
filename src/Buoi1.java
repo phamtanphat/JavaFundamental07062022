@@ -1,3 +1,5 @@
+import java.util.Scanner;
+
 public class Buoi1 {
     public static void main(String[] args) {
 //          1: Kiểu dữ liệu (Data type)
@@ -73,5 +75,31 @@ public class Buoi1 {
 //        } else {
 //            System.out.println("Tèo lớn hơn Tý");
 //        }
+
+        Scanner scanner = new Scanner(System.in);
+        System.out.print("Mời bạn nhập chiều cao(m): ");
+        float height = scanner.nextFloat();
+        System.out.print("Mời bạn nhập cân nặng(kg): ");
+        float weight = scanner.nextFloat();
+
+        double bmi = weight/(height*height);
+
+        String message = "";
+        if (bmi < 18.5) {
+            message = "Gầy";
+        } else if (bmi <= 24.9) {
+            message = "Bình thường";
+        } else if (bmi <= 29.9) {
+            message = "Tiền béo phì";
+        } else if (bmi <= 34.9) {
+            message = "Béo phì độ 1";
+        } else if (bmi <= 39.9) {
+            message = "Béo phì độ 2";
+        } else {
+            message = "Béo phì cấp độ 3";
+        }
+        System.out.println("Chỉ số cơ thể(Bmi): " + bmi);
+        System.out.println(message);
+
     }
 }
