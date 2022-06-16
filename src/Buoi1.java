@@ -106,35 +106,70 @@ public class Buoi1 {
 
 //        5: Câu điều kiện switch case
 
-        Scanner scanner = new Scanner(System.in);
-        System.out.print("Mời bạn nhập tháng: ");
-        int month = scanner.nextInt();
+//        Scanner scanner = new Scanner(System.in);
+//        System.out.print("Mời bạn nhập tháng: ");
+//        int month = scanner.nextInt();
+//
+//        switch (month) {
+//            case 1:
+//            case 2:
+//            case 3:
+//                System.out.println("Quý 1");
+//                break;
+//            case 4:
+//            case 5:
+//            case 6:
+//                System.out.println("Quý 2");
+//                break;
+//            case 7:
+//            case 8:
+//            case 9:
+//                System.out.println("Quý 3");
+//                break;
+//            case 10:
+//            case 11:
+//            case 12:
+//                System.out.println("Quý 4");
+//                break;
+//            default:
+//                System.out.println("Giá trị đưa vào không thỏa");
+//                break;
+//        }
+//        System.out.println("Kết thúc chương trình");
 
-        switch (month) {
-            case 1:
-            case 2:
-            case 3:
-                System.out.println("Quý 1");
-                break;
-            case 4:
-            case 5:
-            case 6:
-                System.out.println("Quý 2");
-                break;
-            case 7:
-            case 8:
-            case 9:
-                System.out.println("Quý 3");
-                break;
-            case 10:
-            case 11:
-            case 12:
-                System.out.println("Quý 4");
-                break;
-            default:
-                System.out.println("Giá trị đưa vào không thỏa");
-                break;
+//        6: Vòng lặp for
+
+//        for (int i = 0; i < 100; i++) {
+//            System.out.println(i);
+//        }
+
+//        Dùng vòng lặp for chạy từ 1 đến 100
+//        1 - In ra số chẳn
+//        2 - In ra số lẻ
+//        3 - In ra số chia 3 dư 1
+
+//        Kiểm tra số nguyên tố
+//        Người dùng nhập vào 1 số bất kỳ
+
+        Scanner scanner = new Scanner(System.in);
+        System.out.print("Nhập 1 số bất kỳ: ");
+        int number = scanner.nextInt();
+        int count = 0;
+
+        if (number < 2) {
+            System.out.println("Không phải là số nguyên tố");
+        } else {
+            for (int i = 2; i <= number / 2; i++) {
+                if (number % 2 == 0) {
+                    count++;
+                }
+            }
+
+            if (count > 2) {
+                System.out.println("Không phải là số nguyên tố");
+            } else {
+                System.out.println("Số " + number + " là số nguyên tố");
+            }
         }
-        System.out.println("Kết thúc chương trình");
     }
 }
