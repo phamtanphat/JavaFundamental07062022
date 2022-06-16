@@ -76,30 +76,65 @@ public class Buoi1 {
 //            System.out.println("Tèo lớn hơn Tý");
 //        }
 
+//        Scanner scanner = new Scanner(System.in);
+//        System.out.print("Mời bạn nhập chiều cao(m): ");
+//        float height = scanner.nextFloat();
+//        System.out.print("Mời bạn nhập cân nặng(kg): ");
+//        float weight = scanner.nextFloat();
+//
+//        double bmi = weight/(height*height);
+//
+//        String message = "";
+//        if (bmi < 18.5) {
+//            message = "Gầy";
+//        } else if (bmi <= 24.9) {
+//            message = "Bình thường";
+//        } else if (bmi <= 29.9) {
+//            message = "Tiền béo phì";
+//        } else if (bmi <= 34.9) {
+//            message = "Béo phì độ 1";
+//        } else if (bmi <= 39.9) {
+//            message = "Béo phì độ 2";
+//        } else {
+//            message = "Béo phì cấp độ 3";
+//        }
+//        System.out.println("Chỉ số cơ thể(Bmi): " + bmi);
+//        System.out.println(message);
+
+
+//        Nhập 1 năm bất kỳ và tính coi năm có nhuận hay không
+
+//        5: Câu điều kiện switch case
+
         Scanner scanner = new Scanner(System.in);
-        System.out.print("Mời bạn nhập chiều cao(m): ");
-        float height = scanner.nextFloat();
-        System.out.print("Mời bạn nhập cân nặng(kg): ");
-        float weight = scanner.nextFloat();
+        System.out.print("Mời bạn nhập tháng: ");
+        int month = scanner.nextInt();
 
-        double bmi = weight/(height*height);
-
-        String message = "";
-        if (bmi < 18.5) {
-            message = "Gầy";
-        } else if (bmi <= 24.9) {
-            message = "Bình thường";
-        } else if (bmi <= 29.9) {
-            message = "Tiền béo phì";
-        } else if (bmi <= 34.9) {
-            message = "Béo phì độ 1";
-        } else if (bmi <= 39.9) {
-            message = "Béo phì độ 2";
-        } else {
-            message = "Béo phì cấp độ 3";
+        switch (month) {
+            case 1:
+            case 2:
+            case 3:
+                System.out.println("Quý 1");
+                break;
+            case 4:
+            case 5:
+            case 6:
+                System.out.println("Quý 2");
+                break;
+            case 7:
+            case 8:
+            case 9:
+                System.out.println("Quý 3");
+                break;
+            case 10:
+            case 11:
+            case 12:
+                System.out.println("Quý 4");
+                break;
+            default:
+                System.out.println("Giá trị đưa vào không thỏa");
+                break;
         }
-        System.out.println("Chỉ số cơ thể(Bmi): " + bmi);
-        System.out.println(message);
-
+        System.out.println("Kết thúc chương trình");
     }
 }
