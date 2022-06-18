@@ -175,24 +175,32 @@ public class Buoi1 {
 
 //        Vòng lặp while
 
-        int count = 1;
-        int currentIndex = 1;
-        String title = "";
-        String content = "";
-        for (int i = 1; i < 11; i++) {
-            title += "Cửu chương " + i + "\t";
-        }
-
-        while (count < 10){
-            currentIndex = 1;
-            while (currentIndex < 11){
-                content += String.format("%d x %d = %d \t", currentIndex, count, count * currentIndex);
-                currentIndex++;
-            }
-            count++;
-            content += "\n";
-        }
-
-        System.out.print(title + "\n" + content);
+//        int count = 1;
+//        int currentIndex = 1;
+//        String title = "";
+//        String content = "";
+//
+//        for (int i = 1; i < 11; i++) {
+//            title += "Cửu chương " + i + "\t";
+//        }
+//
+//        while (count < 10){
+//            currentIndex = 1;
+//            while (currentIndex < 11){
+//                content += String.format("%d x %d = %d \t", currentIndex, count, count * currentIndex);
+//                currentIndex++;
+//            }
+//            count++;
+//            content += "\n";
+//        }
+//
+//        System.out.print(title + "\n" + content);
+//
+//        int number = -1;
+//        Scanner scanner = new Scanner(System.in);
+//        do {
+//            System.out.print("Mời bạn nhập 1 số bất kỳ: ");
+//            number = scanner.nextInt();
+//        }while (number > 0 && number < 10);
     }
 }
