@@ -177,18 +177,22 @@ public class Buoi1 {
 
         int count = 1;
         int currentIndex = 1;
+        String title = "";
+        String content = "";
+        for (int i = 1; i < 11; i++) {
+            title += "Cửu chương " + i + "\t";
+        }
 
         while (count < 10){
-            System.out.println("=============================");
-            System.out.println("Cửu chương " + count);
             currentIndex = 1;
             while (currentIndex < 11){
-                System.out.println(String.format("%d x %d = %d", count, currentIndex, count * currentIndex));
+                content += String.format("%d x %d = %d \t", currentIndex, count, count * currentIndex);
                 currentIndex++;
             }
             count++;
-            System.out.println("=============================");
-            System.out.println("");
+            content += "\n";
         }
+
+        System.out.print(title + "\n" + content);
     }
 }
