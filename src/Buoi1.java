@@ -1,3 +1,4 @@
+import java.util.Arrays;
 import java.util.Scanner;
 
 public class Buoi1 {
@@ -151,25 +152,43 @@ public class Buoi1 {
 //        Kiểm tra số nguyên tố
 //        Người dùng nhập vào 1 số bất kỳ
 
-        Scanner scanner = new Scanner(System.in);
-        System.out.print("Nhập 1 số bất kỳ: ");
-        int number = scanner.nextInt();
-        int count = 0;
+//        Scanner scanner = new Scanner(System.in);
+//        System.out.print("Nhập 1 số bất kỳ: ");
+//        int number = scanner.nextInt();
+//        int count = 0;
+//
+//        if (number < 2) {
+//            System.out.println("Không phải là số nguyên tố");
+//        } else {
+//            for (int i = 2; i <= number / 2; i++) {
+//                if (number % 2 == 0) {
+//                    count++;
+//                }
+//            }
+//
+//            if (count > 2) {
+//                System.out.println("Không phải là số nguyên tố");
+//            } else {
+//                System.out.println("Số " + number + " là số nguyên tố");
+//            }
+//        }
 
-        if (number < 2) {
-            System.out.println("Không phải là số nguyên tố");
-        } else {
-            for (int i = 2; i <= number / 2; i++) {
-                if (number % 2 == 0) {
-                    count++;
-                }
-            }
+//        Vòng lặp while
 
-            if (count > 2) {
-                System.out.println("Không phải là số nguyên tố");
-            } else {
-                System.out.println("Số " + number + " là số nguyên tố");
+        int count = 1;
+        int currentIndex = 1;
+
+        while (count < 10){
+            System.out.println("=============================");
+            System.out.println("Cửu chương " + count);
+            currentIndex = 1;
+            while (currentIndex < 11){
+                System.out.println(String.format("%d x %d = %d", count, currentIndex, count * currentIndex));
+                currentIndex++;
             }
+            count++;
+            System.out.println("=============================");
+            System.out.println("");
         }
     }
 }
