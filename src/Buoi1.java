@@ -202,5 +202,39 @@ public class Buoi1 {
 //            System.out.print("Mời bạn nhập 1 số bất kỳ: ");
 //            number = scanner.nextInt();
 //        }while (number > 0 && number < 10);
+
+//      7 : Mảng (Array)
+//      a : Khởi tạo mảng theo kích thước
+//        String[] arrNames = new String[10];
+//        arrNames[0] = "A";
+//        String valueIndex0 = arrNames[0];
+//        System.out.println("Value index 0: " + valueIndex0);
+
+//      b : Khởi tạo với các giá trị có sẵn
+//      int[] arrNumbers = {4,1,5,10};
+//      Kích thước của mảng
+//      System.out.println(arrNumbers.length);
+
+        int[] arrNumbers1 = {1, 2, 3, 4, 5};
+        int[] arrNumbers2 = {10, 20, 30};
+
+        for (int i = 0; i < arrNumbers1.length; i++) {
+            for (int j = 0; j < arrNumbers2.length; j++) {
+                System.out.println(arrNumbers1[i] * arrNumbers2[j]);
+            }
+        }
+        /**
+         * 10
+         * 20
+         * 30
+         * 20
+         * 40
+         * 60
+         *
+         * 50
+         * 100
+         * 150
+         */
+
     }
 }
