@@ -1,4 +1,5 @@
 import java.util.Arrays;
+import java.util.HashMap;
 import java.util.Scanner;
 
 public class Buoi1 {
@@ -236,18 +237,34 @@ public class Buoi1 {
          * 150
          */
 
-        String[] arrNames1 = {"Hoa", "Tuan", "Khoa", "Tu", "Dat"};
-        String[] arrNames2 = {"Nhung", "Thuy", "Lien"};
+//        String[] arrNames1 = {"Hoa", "Tuan", "Khoa", "Tu", "Dat"};
+//        String[] arrNames2 = {"Nhung", "Thuy", "Lien"};
+//
+//        String[] newArrNames = new String[arrNames1.length + arrNames2.length];
+//        // Gộp 2 mảng thành 1 mảng
+//
+//        for (int i = 0; i < newArrNames.length; i++) {
+//            if (i < arrNames1.length){
+//                newArrNames[i] = arrNames1[i];
+//            } else {
+//                newArrNames[i] = arrNames2[i - arrNames1.length];
+//            }
+//        }
 
-        String[] newArrNames = new String[arrNames1.length + arrNames2.length];
-        // Gộp 2 mảng thành 1 mảng
+//      In ra số lương ký tự xuất hiện bao nhiêu lần
 
-        for (int i = 0; i < newArrNames.length; i++) {
-            if (i < arrNames1.length){
-                newArrNames[i] = arrNames1[i];
+        String[] arrNames = {"Hoa", "Tuan", "Khoa", "Tu", "Dat", "Nhung", "Thuy", "Lien"};
+        HashMap<String,Integer> map = new HashMap<>();
+
+        for (int i = 0; i < arrNames.length; i++) {
+            if (map.containsKey(String.valueOf(arrNames[i].length()))) {
+                map.put(arrNames[i].length() + "",map.get(String.valueOf(arrNames[i].length())) + 1);
             } else {
-                newArrNames[i] = arrNames2[i - arrNames1.length];
+                map.put(arrNames[i].length() + "", 1);
             }
         }
+
+        System.out.println(map);
+
     }
 }
