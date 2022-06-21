@@ -215,14 +215,14 @@ public class Buoi1 {
 //      Kích thước của mảng
 //      System.out.println(arrNumbers.length);
 
-        int[] arrNumbers1 = {1, 2, 3, 4, 5};
-        int[] arrNumbers2 = {10, 20, 30};
-
-        for (int i = 0; i < arrNumbers1.length; i++) {
-            for (int j = 0; j < arrNumbers2.length; j++) {
-                System.out.println(arrNumbers1[i] * arrNumbers2[j]);
-            }
-        }
+//        int[] arrNumbers1 = {1, 2, 3, 4, 5};
+//        int[] arrNumbers2 = {10, 20, 30};
+//
+//        for (int i = 0; i < arrNumbers1.length; i++) {
+//            for (int j = 0; j < arrNumbers2.length; j++) {
+//                System.out.println(arrNumbers1[i] * arrNumbers2[j]);
+//            }
+//        }
         /**
          * 10
          * 20
@@ -236,5 +236,18 @@ public class Buoi1 {
          * 150
          */
 
+        String[] arrNames1 = {"Hoa", "Tuan", "Khoa", "Tu", "Dat"};
+        String[] arrNames2 = {"Nhung", "Thuy", "Lien"};
+
+        String[] newArrNames = new String[arrNames1.length + arrNames2.length];
+        // Gộp 2 mảng thành 1 mảng
+
+        for (int i = 0; i < newArrNames.length; i++) {
+            if (i < arrNames1.length){
+                newArrNames[i] = arrNames1[i];
+            } else {
+                newArrNames[i] = arrNames2[i - arrNames1.length];
+            }
+        }
     }
 }
