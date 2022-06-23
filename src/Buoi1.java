@@ -253,18 +253,47 @@ public class Buoi1 {
 
 //      In ra số lương ký tự xuất hiện bao nhiêu lần
 
-        String[] arrNames = {"Hoa", "Tuan", "Khoa", "Tu", "Dat", "Nhung", "Thuy", "Lien"};
-        HashMap<String,Integer> map = new HashMap<>();
+//        String[] arrNames = {"Hoa", "Tuan", "Khoa", "Tu", "Dat", "Nhung", "Thuy", "Lien"};
+//        HashMap<String,Integer> map = new HashMap<>();
+//
+//        for (int i = 0; i < arrNames.length; i++) {
+//            if (map.containsKey(String.valueOf(arrNames[i].length()))) {
+//                map.put(arrNames[i].length() + "",map.get(String.valueOf(arrNames[i].length())) + 1);
+//            } else {
+//                map.put(arrNames[i].length() + "", 1);
+//            }
+//        }
+//
+//        System.out.println(map);
 
-        for (int i = 0; i < arrNames.length; i++) {
-            if (map.containsKey(String.valueOf(arrNames[i].length()))) {
-                map.put(arrNames[i].length() + "",map.get(String.valueOf(arrNames[i].length())) + 1);
-            } else {
-                map.put(arrNames[i].length() + "", 1);
+        int[] arrNumbers = {10, 12, 5, 12, 20, 3, 30, 1};
+
+        int temp = -1;
+        int count = 0;
+        int increase = 0;
+        for (; count < 6; ) {
+            count = 0;
+            for (int i = 0; i < arrNumbers.length - 1; i++) {
+                if (arrNumbers[i] > arrNumbers[i + 1]) {
+                    temp = arrNumbers[i];
+                    arrNumbers[i] = arrNumbers[i + 1];
+                    arrNumbers[i + 1] = temp;
+                } else {
+                    count += 1;
+                }
             }
+            increase += 1;
         }
 
-        System.out.println(map);
+        System.out.println(increase);
 
+//        for (int i = 0; i < arrNumbers.length; i++) {
+//            System.out.println(arrNumbers[i]);
+//        }
+
+
+//        for (int i = 0; i < arrNumbers.length; i++) {
+//            System.out.println(arrNumbers[i]);
+//        }
     }
 }
