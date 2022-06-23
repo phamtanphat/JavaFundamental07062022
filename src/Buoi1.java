@@ -271,7 +271,7 @@ public class Buoi1 {
         int temp = -1;
         int count = 0;
         int increase = 0;
-        for (; count < 6; ) {
+        for (; count < arrNumbers.length - 2; ) {
             count = 0;
             for (int i = 0; i < arrNumbers.length - 1; i++) {
                 if (arrNumbers[i] > arrNumbers[i + 1]) {
