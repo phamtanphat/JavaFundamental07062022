@@ -266,26 +266,26 @@ public class Buoi1 {
 //
 //        System.out.println(map);
 
-        int[] arrNumbers = {10, 12, 5, 12, 20, 3, 30, 1};
-
-        int temp = -1;
-        int count = 0;
-        int increase = 0;
-        for (; count < arrNumbers.length - 2; ) {
-            count = 0;
-            for (int i = 0; i < arrNumbers.length - 1; i++) {
-                if (arrNumbers[i] > arrNumbers[i + 1]) {
-                    temp = arrNumbers[i];
-                    arrNumbers[i] = arrNumbers[i + 1];
-                    arrNumbers[i + 1] = temp;
-                } else {
-                    count += 1;
-                }
-            }
-            increase += 1;
-        }
-
-        System.out.println(increase);
+//        int[] arrNumbers = {10, 12, 5, 12, 20, 3, 30, 1};
+//
+//        int temp = -1;
+//        int count = 0;
+//        int increase = 0;
+//        for (; count < arrNumbers.length - 2; ) {
+//            count = 0;
+//            for (int i = 0; i < arrNumbers.length - 1; i++) {
+//                if (arrNumbers[i] > arrNumbers[i + 1]) {
+//                    temp = arrNumbers[i];
+//                    arrNumbers[i] = arrNumbers[i + 1];
+//                    arrNumbers[i + 1] = temp;
+//                } else {
+//                    count += 1;
+//                }
+//            }
+//            increase += 1;
+//        }
+//
+//        System.out.println(increase);
 
 //        for (int i = 0; i < arrNumbers.length; i++) {
 //            System.out.println(arrNumbers[i]);
@@ -295,5 +295,34 @@ public class Buoi1 {
 //        for (int i = 0; i < arrNumbers.length; i++) {
 //            System.out.println(arrNumbers[i]);
 //        }
+
+        // Tính kế thừa
+        // Tính đa hình
+        // Tính trườu tượng
+        // Tính đóng gói
+
+        // Object va class
+
+        // Tạo object thứ 0
+        // Cấp phát vùng nhớ
+        Animal cat = new Animal(1.2f, 0.25f); // phương thức khởi tạo
+
+
+        // Tạo object thứ 1
+//        Animal cat1 = new Animal();
+//        cat1.weigh = 2.2f;
+//        cat1.height = 0.5f;
+//
+//        Tạo object thứ 2
+//        Animal cat2 = new Animal();
+//        cat2.weigh = 2.2f;
+//        cat2.height = 0.5f;
+//
+//        if (cat1 == cat2) {
+//            System.out.println("Giống nhau");
+//        } else {
+//            System.out.println("Khác nhau");
+//        }
+
     }
 }
