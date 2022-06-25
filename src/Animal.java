@@ -44,4 +44,8 @@ public class Animal {
     public void setHerbivore(boolean herbivore) {
         isHerbivore = herbivore;
     }
+
+    public void printCategory() {
+        System.out.println("Animal Category");
+    }
 }
