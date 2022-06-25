@@ -306,7 +306,6 @@ public class Buoi1 {
         // Tạo object thứ 0
         // Cấp phát vùng nhớ
         Animal cat = new Animal(1.2f, 0.25f, true); // phương thức khởi tạo
-        cat.eat();
 
         // Tạo object thứ 1
 //        Animal cat1 = new Animal();
@@ -324,5 +323,7 @@ public class Buoi1 {
 //            System.out.println("Khác nhau");
 //        }
 
+//        Access modifier: Phạm vi truy cập biến, lớp, thuộc tính, phương thức
+//         public, private
     }
 }
