@@ -28,4 +28,20 @@ public class Animal {
     public void setWeigh(float weigh) {
         this.weigh = weigh;
     }
+
+    public float getHeight() {
+        return height;
+    }
+
+    public void setHeight(float height) {
+        this.height = height;
+    }
+
+    public boolean isHerbivore() {
+        return isHerbivore;
+    }
+
+    public void setHerbivore(boolean herbivore) {
+        isHerbivore = herbivore;
+    }
 }
