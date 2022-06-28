@@ -1,3 +1,6 @@
+import abstractions.PizzaCheese;
+import abstractions.PizzaStore;
+
 import java.util.Arrays;
 import java.util.HashMap;
 import java.util.Scanner;
@@ -307,9 +310,9 @@ public class Buoi1 {
         // Cấp phát vùng nhớ
 //        Animal cat = new Animal(1.2f, 0.25f, true); // phương thức khởi tạo
 
-        Cat mimi = new Cat(1.2f, 0.25f, true, "grey");
-        mimi.setWeigh(1.3f);
-        mimi.printCategory();
+//        Cat mimi = new Cat(1.2f, 0.25f, true, "grey");
+//        mimi.setWeigh(1.3f);
+//        mimi.printCategory();
         // Tạo object thứ 1
 //        Animal cat1 = new Animal();
 //        cat1.weigh = 2.2f;
@@ -328,5 +331,8 @@ public class Buoi1 {
 
 //        Access modifier: Phạm vi truy cập biến, lớp, thuộc tính, phương thức
 //         public, private
+
+        PizzaStore pizzaStore = new PizzaStore();
+        pizzaStore.orderPizza(new PizzaCheese());
     }
 }
