@@ -1,5 +1,7 @@
 import abstractions.PizzaCheese;
 import abstractions.PizzaStore;
+import interfaces.Facebook;
+import interfaces.MyProgress;
 
 import java.util.Arrays;
 import java.util.HashMap;
@@ -332,7 +334,10 @@ public class Buoi1 {
 //        Access modifier: Phạm vi truy cập biến, lớp, thuộc tính, phương thức
 //         public, private
 
-        PizzaStore pizzaStore = new PizzaStore();
-        pizzaStore.orderPizza(new PizzaCheese());
+//        PizzaStore pizzaStore = new PizzaStore();
+//        pizzaStore.orderPizza(new PizzaCheese());
+
+        MyProgress myProgress = new MyProgress();
+        myProgress.handler(new Facebook());
     }
 }
